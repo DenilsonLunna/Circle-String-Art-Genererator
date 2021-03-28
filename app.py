@@ -79,7 +79,7 @@ class TelaPython():
             [sg.Text("Escolha uma imagem quadrada de preferencia")],
             [sg.Button('Load image', key="loadImage")],  
             [sg.Text("W = 10000 H = 10000", key="textSizeImage",font = 'arial')], 
-            [sg.Text("Pinos: ", key="pinos"),sg.Input(size=(10,0), key="pinosQtd", default_text="250")], 
+            [sg.Text("Pinos: ", key="pinos"),sg.Input(size=(10,0), key="pinosQtd", default_text="144")], 
             [sg.Text("iterações: ", key="iteracoes"),sg.Input(size=(10,0), key="iteracoesQtd", default_text="1800")],
             [sg.Text("Limiar: ", key="textContrast"),sg.Slider(range=(0,130),default_value = 80, orientation='h', key="sliderContrast",change_submits=True)],
             [sg.Text("Adjust: ", key="adjustImage"), sg.Slider(range=(0,255),default_value =0, orientation='h', key="sliderCutWidth",change_submits=True)],  

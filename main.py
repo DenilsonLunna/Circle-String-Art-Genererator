@@ -100,7 +100,7 @@ def algorithmWeaver(lineQtd):
             cont1 = cont1 +1
             cont2 = cont2 +1
         if ((lines % 250) == 0):
-            cv2.imwrite("img_{}_.png".format(cont1),image_output_1)
+            #cv2.imwrite("img_{}_.png".format(cont1),image_output_1)
             cv2.imwrite("imgString_{}_{}lines_.png".format(cont2,lines),image_output_2)
             cont1 = cont1 +1
             cont2 = cont2 +1'''
@@ -109,6 +109,7 @@ def algorithmWeaver(lineQtd):
         cv2.imshow('output_2', image_output_2)
         k = cv2.waitKey(1)
         if(k == 27):
+            return segments
             break
         lines += 1
         if bigger[0] == 0 or lines == lineQtd:
